@@ -20,6 +20,11 @@ p {
     width: 100%;
 }
 
+#message { 
+    padding: 20px 10px; 
+    line-height: 28px; 
+}
+
 .button {
     background-color: #4aaaa5;
     padding: 5px 15px;
@@ -82,15 +87,15 @@ nav {
 
 .right-nav {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 0px;
+    bottom: 30px;
     text-decoration: none;
 }
 
 .left-nav {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: 20px;
     text-decoration: none;
 }
 
@@ -102,6 +107,7 @@ nav {
     color: #cccccc;
     font-size: 0.5em;
     margin-top: 30px;
+    width: 100%;
 }
 
 .image-text {
@@ -110,10 +116,24 @@ nav {
     width: 100%;
     color: #ffffff;
     background-color: #4aaaa5;
+    padding: 10px;
+    margin: 10px;
+
 }
 
 .content img {
     height: 200px;
     width: 200px;
-    float: left;
 }
+
+.portfolio-a {
+    position: relative;
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
